@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/* varaibles */
+:root {
+  --primary: #22d0ff;
+  --secondary: #0a0b5b;
+}
+
+/* reset */
+
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* base style */
+body {
+  background-color: var(--secondary);
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+.button {
+  border: 2px solid var(--primary);
+  background-color: var(--secondary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+}
+
+.button:hover {
+  color: #222;
+  background-color: var(--primary);
+}
+.button:active {
+  outline: none;
+}
+
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f2f2f2;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid #9893d8;
+}
+
+/* fonts */
+
+h1,
+h2,
+h3,
+h4 {
+  color: #dddbff;
+  font-weight: normal;
+}
+
+p,
+a,
+li {
+  color: #9893d8;
+}
+
+h1,
+h3 {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+
+.leading {
+  font-size: 1.1em;
+}
+
+/* MOBILE SYTLES */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.site-nav {
+  margin: 0 20px;
+}
